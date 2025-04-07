@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiti - Home</title>
+    <!-- link for css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- link for font awosemo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link for animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- code for header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row d-flex align-center justify-between">
+                <div class="box">
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo.svg" alt="" class="img-fluid">
+                    </a>
+                </div>
+                <div class="box mobile">
+                    <ul class="d-flex align-center">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#special">SPECIAL</a></li>
+                        <li><a href="#menu">MENU</a></li>
+                        <li><a href="#events">EVENTS</a></li>
+                        <li><a href="#contact">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="box pc">
+                    <!-- The overlay -->
+                    <div id="myNav" class="overlay">
+
+                        <!-- Button to close the overlay navigation -->
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                        <!-- Overlay content -->
+                        <div class="overlay-content">
+                            <a href="#">HOME</a>
+                            <a href="#special">SPECIAL</a>
+                            <a href="#menu">MENU</a>
+                            <a href="#events">EVENTS</a>
+                            <a href="#contact">CONTACT US</a>
+                        </div>
+
+                    </div>
+
+                    <!-- Use any element to open/show the overlay navigation menu -->
+                    <span onclick="openNav()"><i class="fa-solid fa-bars"></i></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CODE FOR HERO SECTION -->
+    <section class="hero-section small-mobile">
+        <div class="container">
+            <div class="row d-flex align-center">
+                <div class="col-2">
+                    <h1>Welcome to Chiti</h1>
+                    <p>Chiti, we believe in the perfect pairing of good food and great coffee.
+                        Savor our expertly brewed espresso drinks and specialty coffees,
+                        each cup a testament to our passion for quality. With a cozy
+                        atmosphere and a welcoming vibe, Chiti is the ideal place to unwind,
+                        catch up with friends, or simply enjoy time with your kids.</p>
+                </div>
+                <div class="col-1">
+                    <img src="assets/images/hero-image.svg" alt="" class="img-fluid" data-aos="zoom-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- code for grid section -->
+    <section class="food-menu" id="special">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-1 singleGrid" data-aos="fade-down-right">
+                    <div class="pri-box d-flex align-center justify-between">
+                        <div class="sub-box">
+                            <p>Try it out today </p>
+                            <h4>Borch</h4>
+                        </div>
+                        <div class="sub-box">
+                            <img src="assets/images/whiteBounchBird.svg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                    <img src="assets/images/borch-food.svg" alt="" class="img-fluid food-image">
+                </div>
+                <div class="col-1 twoGrid">
+                    <div class="box d-flex" data-aos="fade-down">
+                        <div class="primary-box">
+                            <div class="secondary-box">
+                                <p>Thay</p>
+                                <h4>Waffle</h4>
+                            </div>
+                            <div class="secondary-box">
+                                <img src="assets/images/waffleWhiteBird.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                            <img src="assets/images/waffle-food.svg" alt="" class="img-fluid food-image">
+                        
+                    </div>
+                    <div class="box d-flex" data-aos="fade-up">
+                        <div class="primary-box">
+                            <div class="secondary-box">
+                                <p>Tortilia</p>
+                                <h4>Breakfast</h4>
+                            </div>
+                            <div class="secondary-box">
+                                <img src="assets/images/breakfastWhiteBord.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                            <img src="assets/images/breakfast-food.svg" alt="" class="img-fluid food-image">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- code for birds with heading  -->
+     <section class="heading-cards" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center">
+                    <div class="label" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">ALWAYS LIGHT FOOD</div>
+                    <h1 data-aos="fade-up"
+                    data-aos-anchor-placement="bottom-bottom">CHOOSE & ENJOY</h1>
+                    <p data-aos="zoom-out-right">Chiti team always tries to give you the best service !</p>
+                </div>
+            </div>
+        </div>
+        <img src="assets/images/headingLeftBird.svg" alt="" class="img-fluid headingLeftBird" data-aos="zoom-in-down">
+        <img src="assets/images/headingRightBirds.svg" alt="" class="img-fluid headingRightBirds" data-aos="zoom-in-up">
+     </section>
+
+    <!-- Code for cards  -->
+     <section class="cards">
+        <div class="container">
+            <div class="row d-flex justify-between">
+                <div class="box" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="assets/images/breakfast.svg" alt="" class="img-fluid">
+                    <h4>Breakfast</h4>
+                    <div class="timingFlex d-flex align-center justify-center">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>10:00-21:00</p>
+                    </div>
+                    <p class="main-para-card">Discover delicious breakfasts crafted with fresh, quality ingredients</p>
+                    <div class="btn">
+                        <a href="#">View</a>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-down" data-aos-duration="1500">
+                    <img src="assets/images/main-course.svg" alt="" class="img-fluid">
+                    <h4>main course</h4>
+                    <div class="timingFlex d-flex align-center justify-center">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>13:00-20:30</p>
+                    </div>
+                    <p class="main-para-card">Enjoy rich, flavorful dishes crafted to satisfy every taste</p>
+                    <div class="btn">
+                        <a href="#">View</a>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-up" data-aos-duration="1500">
+                    <img src="assets/images/drinks.svg" alt="" class="img-fluid">
+                    <h4>Drinks</h4>
+                    <div class="timingFlex d-flex align-center justify-center">
+                        <i class="fa-solid fa-clock"></i>
+                        <p>10:00-21:00</p>
+                    </div>
+                    <p class="main-para-card">Discover delicious breakfasts crafted with fresh, quality ingredients</p>
+                    <div class="btn">
+                        <a href="#">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+     <!-- code for upcoming Events -->
+     <section class="events" id="events">
+        <div class="container">
+            <div class="row gapRow d-flex align-center">
+                <div class="col-2">
+                    <h1>UPCOMING EVENT</h1>
+                    <p class="main-para">Get ready for a delightful day of creativity and fun! We're hosting a special event where kids can make their very own handmade pumpkins. Under the guidance of our wonderful teacher, Little Mashachka, children will explore their artistic side and create unique decorations just in time for the season!</p>
+                </div>
+                <div class="col-1">
+                    <img src="assets/images/event-bird.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row d-flex align-center" id="contact">
+                <div class="col-2">
+                    <div class="dateInfo d-flex align-center">
+                        <p>23.05.12</p>
+                        <a href="#" class="box d-flex align-center">
+                            <div class="pri-box">
+                                <h6>English class for children</h6>
+                            </div>
+                            <div class="pri-box">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="dateInfo d-flex align-center">
+                        <p>26.05.12</p>
+                        <a href="#" class="box d-flex align-center">
+                            <div class="pri-box">
+                                <h6>English class for children</h6>
+                            </div>
+                            <div class="pri-box">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="dateInfo d-flex align-center">
+                        <p>29.05.12</p>
+                        <a href="#" class="box d-flex align-center">
+                            <div class="pri-box">
+                                <h6>English class for children</h6>
+                            </div>
+                            <div class="pri-box">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1">
+                    <div class="box">
+                        <a href="https://maps.app.goo.gl/antACwygRXbgSMwP8" target="_blank" class="info d-flex align-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>Ekvtime Takaishvili 3</p>
+                        </a>
+                        <a href="https://maps.app.goo.gl/EmTKd2nyT8wsbwor9" target="_blank" class="info d-flex align-center">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>vake park</p>
+                        </a>
+                        <div class="info d-flex align-center">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:chiti.cafe@gmail.com">chiti.cafe@gmail.com</a>
+                        </div>
+                        <div class="icons d-flex align-center">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section> 
+
+
+
+
+
+
+    <script src="assets/js/script.js"></script>
+    <!-- JS CODE FOR AOS (animation on scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
